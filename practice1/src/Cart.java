@@ -14,7 +14,7 @@ public class Cart {
         products.add(product);
     }
 
-    // Метод для видалення товару з кошика
+    // Метод для видалення товару з кошика (самостійна робота)
     public void removeProduct(Product product) {
         products.remove(product);
     }

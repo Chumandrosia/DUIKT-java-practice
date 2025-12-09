@@ -45,6 +45,16 @@ public class Product {
         this.category = category;
     }
 
+    // Метод для перевірки чи відповідає товар пошуковому запиту за назвою
+    public boolean matchesName(String searchTerm) {
+        return this.name.toLowerCase().contains(searchTerm.toLowerCase());
+    }
+
+    // Метод для перевірки чи відповідає товар пошуковому запиту за категорією
+    public boolean matchesCategory(String categoryName) {
+        return this.category.getName().toLowerCase().contains(categoryName.toLowerCase());
+    }
+
     @Override
     public String toString() {
         return "Товар{" +
